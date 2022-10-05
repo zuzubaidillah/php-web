@@ -1,7 +1,13 @@
 <?php
+$browser = $_SERVER['HTTP_SEC_CH_UA'];
+$removePetik = str_replace('"', "", $browser);
+$arrayBrowser = explode(";", $removePetik);
+$versiBrowser = str_replace("=", '.', $arrayBrowser[4]);
+$hasilBroser = $arrayBrowser[0] . " " . $versiBrowser;
 // echo "<pre>";
-// var_dump($_SERVER);
+// var_dump($browser, $removePetik, $arrayBrowser, $hasilBroser);
 // die();
+$os = $_SERVER['HTTP_SEC_CH_UA_PLATFORM'];
 ?>
 <html>
 

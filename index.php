@@ -13,6 +13,9 @@
         <li>
             <a href="/01-server.php">server</a>
         </li>
+        <li>
+            <a href="/get/get.php?name=mohammad">get</a>
+        </li>
     </ul>
 </body>
 
