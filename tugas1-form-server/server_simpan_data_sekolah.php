@@ -1,9 +1,22 @@
 <?php
-$namaSekolah = "menunggu...";
-$adaSiswa = "menunggu...";
-$almat = "menunggu...";
-$aktif = "menunggu...";
-$telpon = "menunggu...";
+// echo "<pre>";
+// var_dump($_POST);
+// die();
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $namaSekolah = strtoupper($_POST['txt_nama']);
+    $telpon = $_POST['txt_telpon'];
+    $almat = $_POST['txt_alamat'];
+    $aktif = isset($_POST['txt_status']) ? "Aktif" : "Tidak Aktif";
+    $adaSiswa = strtoupper($_POST['txt_punya_siswa']);
+} else {
+
+    $namaSekolah = "menunggu...";
+    $adaSiswa = "menunggu...";
+    $almat = "menunggu...";
+    $aktif = "menunggu...";
+    $telpon = "menunggu...";
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">

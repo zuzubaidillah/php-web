@@ -44,19 +44,19 @@
                         <form action="server_simpan_data_sekolah.php" method="post">
                             <div class="mb-3">
                                 <label for="nama" class="form-label">Nama sekolah</label>
-                                <input type="text" class="form-control" id="nama">
+                                <input type="text" class="form-control" id="nama" name="txt_nama">
                                 <div class="form-text">Pastikan huruf Capital(besar)</div>
                             </div>
                             <div class="mb-3">
                                 <label for="telpon" class="form-label">Telpon sekolah</label>
-                                <input type="text" class="form-control" id="telpon">
+                                <input type="text" class="form-control" id="telpon" name="txt_telpon">
                             </div>
                             <div class="mb-3">
                                 <label for="alamat" class="form-label">Alamat</label>
-                                <textarea class="form-control"></textarea>
+                                <textarea class="form-control" name="txt_alamat"></textarea>
                             </div>
                             <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="txt_status">
+                                <input type="checkbox" class="form-check-input" id="txt_status" name="txt_status">
                                 <label class="form-check-label" for="txt_status">Sekolah Aktif?</label>
                             </div>
                             <label for="">Ada siswa</label>
